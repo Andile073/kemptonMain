@@ -1,14 +1,7 @@
-// Fade-in animation
-const faders = document.querySelectorAll('.fade-in');
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
-    });
-}, { threshold: 0.2 });
-
-faders.forEach(section => {
-    observer.observe(section);
+// Navbar background change on scroll
+window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    navbar.style.background = window.scrollY > 50 
+        ? "rgba(15,23,42,0.95)" 
+        : "rgba(15,23,42,0.7)";
 });
