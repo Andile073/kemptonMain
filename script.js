@@ -1,0 +1,40 @@
+// FADE IN ON SCROLL
+const faders = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.3 });
+
+faders.forEach(section => {
+    observer.observe(section);
+});
+
+
+// COUNTDOWN TO NEXT SUNDAY 9AM
+function updateCountdown() {
+    const now = new Date();
+    const nextSunday = new Date();
+
+    nextSunday.setDate(now.getDate() + (7 - now.getDay()) % 7);
+    nextSunday.setHours(9, 0, 0, 0);
+
+    if (now.getDay() === 0 && now.getHours() >= 9) {
+        nextSunday.setDate(nextSunday.getDate() + 7);
+    }
+
+    const diff = nextSunday - now;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / 1000 / 60) % 60);
+
+    document.getElementById("countdown").innerHTML =
+        `Next Sunday Service starts in: ${days}d ${hours}h ${minutes}m`;
+}
+
+setInterval(updateCountdown, 60000);
+updateCountdown();
