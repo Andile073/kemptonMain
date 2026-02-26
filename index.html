@@ -16,11 +16,15 @@
         <span>Christ Embassy</span>
     </div>
 
-    <div class="nav-links">
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+
+    <div class="nav-links" id="navLinks">
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#livestream">Watch Live</a>
         <a href="#location">Contact</a>
-        <a href="#livestream" class="live-btn">Watch Live</a>
     </div>
 </nav>
 
@@ -30,7 +34,7 @@
         <h4>WELCOME TO</h4>
         <h1>Christ Embassy<br>Kempton Park</h1>
         <p>
-            A place where faith grows, community thrives, 
+            A place where faith grows, community thrives,
             and everyone is welcome.
         </p>
 
@@ -41,7 +45,7 @@
     </div>
 </section>
 
-<!-- SERVICES PREVIEW -->
+<!-- SERVICES -->
 <section id="services" class="service-preview">
     <h2>Service Times</h2>
 
@@ -75,24 +79,26 @@
 
 <!-- ABOUT -->
 <section id="about" class="about-section">
-    <div class="about-content">
-        <h2>Welcome Home</h2>
-        <p>
-            Christ Embassy is a global ministry committed to taking the divine 
-            presence of God to the nations of the world. At Christ Embassy 
-            Kempton Park, we are passionate about raising champions and 
-            transforming lives through prayer, worship, and the Word.
-        </p>
-    </div>
+    <h2>Welcome Home</h2>
+    <p>
+        Christ Embassy is a global ministry committed to taking the divine
+        presence of God to the nations of the world. At Christ Embassy
+        Kempton Park, we are passionate about raising champions and
+        transforming lives through prayer, worship, and the Word.
+    </p>
 </section>
 
 <!-- LIVE STREAM -->
 <section id="livestream" class="live-section">
     <h2>Watch Our Services Online</h2>
-    <p>Join us from anywhere in the world through our live stream.</p>
+    <p>Join us live from anywhere in the world.</p>
 
     <div class="video-box">
-        <a href="https://youtube.com" target="_blank" class="play-button">▶</a>
+        <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
     </div>
 </section>
 
@@ -104,6 +110,16 @@
         Edleen, Kempton Park<br>
         South Africa
     </p>
+
+    <div class="map-box">
+        <iframe 
+            src="https://www.google.com/maps?q=44+Oleander+Ave+Kempton+Park&output=embed"
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </div>
 </section>
 
 <footer>
