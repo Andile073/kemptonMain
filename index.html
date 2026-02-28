@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Christ Embassy Kempton Park</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,13 +17,12 @@
         <span>Christ Embassy</span>
     </div>
 
-    <div class="hamburger" id="hamburger">
-        ☰
-    </div>
+    <div class="hamburger" id="hamburger">☰</div>
 
     <div class="nav-links" id="navLinks">
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#ministries">Ministries</a>
         <a href="#livestream">Watch Live</a>
         <a href="#location">Contact</a>
     </div>
@@ -33,77 +33,92 @@
     <div class="hero-content">
         <h4>WELCOME TO</h4>
         <h1>Christ Embassy<br>Kempton Park</h1>
-        <p>
-            A place where faith grows, community thrives,
-            and everyone is welcome.
-        </p>
+        <p>A place where faith grows, community thrives, and everyone is welcome.</p>
 
         <div class="hero-buttons">
-            <a href="#livestream" class="btn-primary">Watch Live Now</a>
-            <a href="#services" class="btn-outline">View Service Times</a>
+            <a href="#livestream" class="btn-primary">Watch Live</a>
+            <a href="#services" class="btn-outline">Service Times</a>
         </div>
     </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="service-preview">
+<section id="services" class="section">
     <h2>Service Times</h2>
 
-    <div class="service-cards">
-        <div class="service-card">
-            <div class="icon">⏰</div>
+    <div class="cards">
+        <div class="card">
             <h3>Sunday</h3>
-            <p>8:00 AM – 9:00 AM Morning Prayer</p>
-            <p>9:00 AM – 12:00 PM Sunday Service</p>
+            <p>8:00 AM – Morning Prayer</p>
+            <p>9:00 AM – Sunday Service</p>
         </div>
 
-        <div class="service-card">
-            <div class="icon">⏰</div>
+        <div class="card">
             <h3>Monday</h3>
-            <p>6:00 PM – 10:00 PM Prayer</p>
+            <p>6:00 PM – Prayer Meeting</p>
         </div>
 
-        <div class="service-card">
-            <div class="icon">⏰</div>
+        <div class="card">
             <h3>Wednesday</h3>
-            <p>6:00 PM – 8:00 PM Midweek Service</p>
+            <p>6:00 PM – Midweek Service</p>
         </div>
 
-        <div class="service-card">
-            <div class="icon">⏰</div>
+        <div class="card">
             <h3>Saturday</h3>
-            <p>8:00 AM – 10:00 AM Morning Prayer</p>
+            <p>8:00 AM – Morning Prayer</p>
         </div>
     </div>
 </section>
 
+<!-- MINISTRIES -->
+<section id="ministries" class="section dark">
+    <h2>Our Ministries</h2>
+
+    <div class="cards">
+
+        <div class="card ministry">
+            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18" alt="Children Service">
+            <h3>Children Service</h3>
+            <p>A fun and safe space where children learn about Jesus through worship, Bible stories and activities.</p>
+        </div>
+
+        <div class="card ministry">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Teens Service">
+            <h3>Teens Ministry</h3>
+            <p>Equipping teenagers to grow spiritually, build confidence and stand strong in faith.</p>
+        </div>
+
+        <div class="card ministry">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Youth Service">
+            <h3>Youth Service</h3>
+            <p>Empowering young adults to discover purpose, leadership and impact their generation.</p>
+        </div>
+
+    </div>
+</section>
+
 <!-- ABOUT -->
-<section id="about" class="about-section">
+<section id="about" class="section">
     <h2>Welcome Home</h2>
     <p>
-        Christ Embassy is a global ministry committed to taking the divine
-        presence of God to the nations of the world. At Christ Embassy
-        Kempton Park, we are passionate about raising champions and
-        transforming lives through prayer, worship, and the Word.
+        Christ Embassy is a global ministry committed to taking the divine presence of God to the nations.
+        At Christ Embassy Kempton Park, we raise champions and transform lives through prayer, worship and the Word.
     </p>
 </section>
 
 <!-- LIVE STREAM -->
-<section id="livestream" class="live-section">
-    <h2>Watch Our Services Online</h2>
-    <p>Join us live from anywhere in the world.</p>
-
+<section id="livestream" class="section dark">
+    <h2>Watch Online</h2>
     <div class="video-box">
         <iframe width="100%" height="100%"
             src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"
-            frameborder="0"
-            allowfullscreen>
+            frameborder="0" allowfullscreen>
         </iframe>
     </div>
 </section>
 
 <!-- LOCATION -->
-<section id="location" class="location-section">
+<section id="location" class="section">
     <h2>Visit Us</h2>
     <p>
         44 Oleander Ave<br>
@@ -114,10 +129,7 @@
     <div class="map-box">
         <iframe 
             src="https://www.google.com/maps?q=44+Oleander+Ave+Kempton+Park&output=embed"
-            width="100%" 
-            height="100%" 
-            frameborder="0" 
-            allowfullscreen>
+            width="100%" height="100%" frameborder="0" allowfullscreen>
         </iframe>
     </div>
 </section>
