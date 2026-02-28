@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Christ Embassy Kempton Park</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,56 +15,60 @@
 <nav class="navbar">
     <div class="logo">
         <div class="logo-circle">CE</div>
-        <span>Christ Embassy</span>
+        <span>Christ Embassy Kempton Park</span>
     </div>
-
-    <div class="hamburger" id="hamburger">☰</div>
 
     <div class="nav-links" id="navLinks">
         <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <a href="#services">Service Times</a>
         <a href="#ministries">Ministries</a>
         <a href="#livestream">Watch Live</a>
-        <a href="#location">Contact</a>
+        <a href="#location">Visit</a>
     </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-content">
-        <h4>WELCOME TO</h4>
+    <div class="hero-overlay">
+        <h4>WELCOME HOME</h4>
         <h1>Christ Embassy<br>Kempton Park</h1>
-        <p>A place where faith grows, community thrives, and everyone is welcome.</p>
-
-        <div class="hero-buttons">
-            <a href="#livestream" class="btn-primary">Watch Live</a>
-            <a href="#services" class="btn-outline">Service Times</a>
-        </div>
+        <p>Raising champions. Transforming lives. Building faith.</p>
+        <a href="#services" class="btn">Join Us This Sunday</a>
     </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="section">
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About Our Church</h2>
+    <p>
+        Christ Embassy Kempton Park is a place where God’s Word is taught with clarity and power.
+        We are passionate about raising leaders, strengthening families, and building a strong
+        generation rooted in Christ.
+    </p>
+</section>
+
+<!-- SERVICE TIMES -->
+<section id="services" class="services">
     <h2>Service Times</h2>
 
-    <div class="cards">
-        <div class="card">
+    <div class="service-box">
+        <div>
             <h3>Sunday</h3>
             <p>8:00 AM – Morning Prayer</p>
             <p>9:00 AM – Sunday Service</p>
         </div>
 
-        <div class="card">
+        <div>
             <h3>Monday</h3>
             <p>6:00 PM – Prayer Meeting</p>
         </div>
 
-        <div class="card">
+        <div>
             <h3>Wednesday</h3>
             <p>6:00 PM – Midweek Service</p>
         </div>
 
-        <div class="card">
+        <div>
             <h3>Saturday</h3>
             <p>8:00 AM – Morning Prayer</p>
         </div>
@@ -71,54 +76,50 @@
 </section>
 
 <!-- MINISTRIES -->
-<section id="ministries" class="section dark">
+<section id="ministries" class="ministries">
     <h2>Our Ministries</h2>
 
-    <div class="cards">
+    <div class="ministry-grid">
 
-        <div class="card ministry">
-            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18" alt="Children Service">
-            <h3>Children Service</h3>
-            <p>A fun and safe space where children learn about Jesus through worship, Bible stories and activities.</p>
+        <div class="ministry-card">
+            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74" alt="Children Church">
+            <div class="ministry-content">
+                <h3>Children Church</h3>
+                <p>A joyful and safe environment where children learn about Jesus through fun lessons, songs and activities.</p>
+            </div>
         </div>
 
-        <div class="card ministry">
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Teens Service">
-            <h3>Teens Ministry</h3>
-            <p>Equipping teenagers to grow spiritually, build confidence and stand strong in faith.</p>
+        <div class="ministry-card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Teens Church">
+            <div class="ministry-content">
+                <h3>Teens Church</h3>
+                <p>Helping teenagers grow spiritually, develop confidence and build strong Christian friendships.</p>
+            </div>
         </div>
 
-        <div class="card ministry">
-            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Youth Service">
-            <h3>Youth Service</h3>
-            <p>Empowering young adults to discover purpose, leadership and impact their generation.</p>
+        <div class="ministry-card">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="Youth Church">
+            <div class="ministry-content">
+                <h3>Youth Service</h3>
+                <p>Empowering young adults to discover purpose, leadership and impact their generation for Christ.</p>
+            </div>
         </div>
 
     </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-    <h2>Welcome Home</h2>
-    <p>
-        Christ Embassy is a global ministry committed to taking the divine presence of God to the nations.
-        At Christ Embassy Kempton Park, we raise champions and transform lives through prayer, worship and the Word.
-    </p>
-</section>
-
 <!-- LIVE STREAM -->
-<section id="livestream" class="section dark">
-    <h2>Watch Online</h2>
-    <div class="video-box">
-        <iframe width="100%" height="100%"
-            src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"
-            frameborder="0" allowfullscreen>
-        </iframe>
+<section id="livestream" class="livestream">
+    <h2>Watch Live</h2>
+    <div class="video-wrapper">
+        <iframe 
+        src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"
+        frameborder="0" allowfullscreen></iframe>
     </div>
 </section>
 
 <!-- LOCATION -->
-<section id="location" class="section">
+<section id="location" class="location">
     <h2>Visit Us</h2>
     <p>
         44 Oleander Ave<br>
@@ -126,11 +127,10 @@
         South Africa
     </p>
 
-    <div class="map-box">
+    <div class="map-wrapper">
         <iframe 
-            src="https://www.google.com/maps?q=44+Oleander+Ave+Kempton+Park&output=embed"
-            width="100%" height="100%" frameborder="0" allowfullscreen>
-        </iframe>
+        src="https://www.google.com/maps?q=44+Oleander+Ave+Kempton+Park&output=embed"
+        frameborder="0" allowfullscreen></iframe>
     </div>
 </section>
 
@@ -138,6 +138,5 @@
     © 2026 Christ Embassy Kempton Park | All Rights Reserved
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
